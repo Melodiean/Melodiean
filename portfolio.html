@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melody Nsita</title>
+    <link rel="stylesheet" href="myPortfolio.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <p id="menu">MENU</p>
+      <div id="menuc">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <!-- <a href="#skills">SKILLS</a> -->
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <div class="con">
+      <div class="box" id="home">
+        <div id="homes">
+          <img
+            src="https://avatars2.githubusercontent.com/u/69842148?s=640&v=4"
+            alt="profile_image"
+            id="avi"
+          />
+          <h3 id="myNam">Melody Nsita</h3>
+          <p>Learner at Outbox</p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="box" id="about">
+        <h4>ABOUT ME</h4>
+        <div id="abouts">
+          <p>
+            Hey! I am an aspiring <mark>Full Stack Developer</mark> who loves
+            coding and learning new things! Problem-solving is something I find
+            exciting, the thought of looking into different solutions is what I
+            long for.
+          </p>
+        </div>
+      </div>
+
+      <div class="box" id="skills">
+        <h4>SKILLS</h4>
+        <div id="skillss">
+          <div class="skills">
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JS</button>
+            <button>GIT</button>
+            <button>EXPRESS</button>
+            <button>MONGOD</button>
+            <button>NODEJS</button>
+            <button>REACT</button>
+          </div>
+          <!-- <ul>
+            <li><p>HTML</p>
+            <progress max="100" value="95"></progress>
+</li>
+            <li><p>CSS</p>
+            <progress max="100" value="70"></progress>
+</li>
+            <li><p>JS</p>
+            <progress max="100" value="50"></progress></li>
+          </ul> -->
+        </div>
+      </div>
+
+<div class="box" id="projects">
+  <h4>PROJECTS</h4>
+<div id="projs">
+<div class="proj">
+
+</div>
+<div class="proj">
+
+</div>
+ <div class="proj">
+
+ </div> 
+</div>
+</div>
+
+      <div class="box" id="contact">
+        <h4>CONTACT ME</h4>
+        <!-- <div id="contacts"> -->
+        <form action="#" id="contacts">
+          <input type="text" placeholder="Name..." />
+          <textarea maxlength="50" placeholder="Message..."></textarea>
+
+          <button type="submit">SEND</button>
+        </form>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class="foot">
+      <p>Follow Me On:</p>
+      <a href="https://github.com/Melodiean" target="_blank"> Github </a>
+      <a href="https://mobile.twitter.com/melonoian" target="_blank"> Twitter </a>
+
+      <p id="ft"></p>
+    </div>
+    <script>
+      let ft = document.querySelector("#ft");
+      let date = new Date();
+      let ye = date.getFullYear();
+      ft.style.color = "silver";
+      ft.style.fontSize = ".6rem";
+      ft.textContent = `Copyright ${ye} Melodiean`;
+    </script>
+  </body>
+</html>
