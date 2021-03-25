@@ -4,18 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melody Nsita</title>
+    <script
+    src="https://kit.fontawesome.com/db6572df72.js"
+    crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <link rel="stylesheet" href="portfolio.css" type="text/css" />
   </head>
   <body>
     <nav>
-      <p id="menu">MENU</p>
+      <div id="menu"> 
+        <div>
+          <i class="fas fa-bars"></i> 
+       <span>
+        MENU
+       </span>
+        </div>
+        
+      </div>
       <div id="menuc">
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
-        <!-- <a href="#skills">SKILLS</a> -->
+        <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </div>
+    
     </nav>
 
     <div class="con">
@@ -27,7 +46,7 @@
             id="avi"
           />
           <h3 id="myNam">Melody Nsita</h3>
-          <p>Learner at Outbox</p>
+          <p>JS Enthusiast. Web Developer.</p>
           <hr />
         </div>
       </div>
@@ -48,70 +67,66 @@
         <h4>SKILLS</h4>
         <div id="skillss">
           <div class="skills">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JS</button>
-            <button>GIT</button>
-            <button>EXPRESS</button>
-            <button>MONGOD</button>
-            <button>NODEJS</button>
-            <button>REACT</button>
+              <i class="fab fa-html5 fa-3x"></i>
+              <i class="fab fa-node-js fa-3x"></i>
+              <i class="fab fa-github fa-3x"></i>
+              <i class="fab fa-react fa-3x"></i>
+              <i class="fab fa-css3-alt fa-3x"></i>
           </div>
-          <!-- <ul>
-            <li><p>HTML</p>
-            <progress max="100" value="95"></progress>
-</li>
-            <li><p>CSS</p>
-            <progress max="100" value="70"></progress>
-</li>
-            <li><p>JS</p>
-            <progress max="100" value="50"></progress></li>
-          </ul> -->
         </div>
       </div>
 
-<div class="box" id="projects">
-  <h4>PROJECTS</h4>
-<div id="projs">
-<div class="proj">
-
-</div>
-<div class="proj">
-
-</div>
- <div class="proj">
-
- </div> 
-</div>
-</div>
+      <div class="box" id="projects">
+        <h4>PROJECTS</h4>
+        <div id="projs"> 
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-white-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+          <!-- <!-- <div class="proj"></div>
+          <div class="proj"></div>
+          <div class="proj"></div> -->
+        </div> 
+      </div>
 
       <div class="box" id="contact">
         <h4>CONTACT ME</h4>
-        <!-- <div id="contacts"> -->
-        <form action="#" id="contacts">
-          <input type="text" placeholder="Name..." />
-          <textarea maxlength="50" placeholder="Message..."></textarea>
+        <form action="contact.php" method="post" id="contacts">
+          <input type="text" id="name" name="guest_name" placeholder="Name" />
+          <input type="email" id="email" name="guest_email" placeholder="Email" />
+          <input type="text" id="title" name="mail_title" placeholder="Subject" />
+          <textarea id="message" name="guest_message" maxlength="100" placeholder="Enter Message"></textarea>
 
-          <button type="submit">SEND</button>
+          <button type="submit" name="send">SEND</button>
         </form>
-        <!-- </div> -->
       </div>
     </div>
-
+    
     <div class="foot">
-      <p>Follow Me On:</p>
-      <a href="https://github.com/Melodiean" target="_blank"> Github </a>
-      <a href="https://mobile.twitter.com/melonoian" target="_blank"> Twitter </a>
+      <p>Find Me On:</p>
+      <div class="foota">
 
+        <a href="https://github.com/Melodiean" target="_blank"> <i class="fab fa-github-square fa-2x"></i></a>
+        <a href="https://mobile.twitter.com/melonoian" target="_blank">
+          <i class="fab fa-twitter-square fa-2x"></i>
+        </a>
+        <a href="https://www.linkedIn.com/in/melodiean" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        
+      </div>
       <p id="ft"></p>
     </div>
     <script>
       let ft = document.querySelector("#ft");
-      let date = new Date();
-      let ye = date.getFullYear();
       ft.style.color = "silver";
-      ft.style.fontSize = ".6rem";
-      ft.textContent = `Copyright ${ye} Melodiean`;
+      ft.style.fontSize = "1rem";
+      ft.textContent = `Copyright ${new Date().getFullYear()} Melodiean`;
     </script>
   </body>
 </html>

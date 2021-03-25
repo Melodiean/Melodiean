@@ -1,0 +1,29 @@
+{
+  "name": "melodiean",
+  "version": "1.0.0",
+  "description": "I am Melody Nsita, an aspiring Full Stack Developer.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melodiean/Melodiean.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Melodiean/Melodiean/issues"
+  },
+  "homepage": "https://github.com/Melodiean/Melodiean#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "nodemailer": "^6.4.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

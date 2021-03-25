@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Redressed&display=swap");
 
 * {
-  font-size: 105%;
+  font-size: 106%;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -37,6 +37,7 @@ nav {
   top: 0;
   width: 100%;
   box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.445);
+  height: fit-content;
 }
 
 /* container */
@@ -63,8 +64,9 @@ a {
   font-weight: 400;
   color: white;
   text-shadow: 1px 1px 2px black;
-  margin: 3px;
+  margin: 0 .7vw;
   padding: 5px;
+  font-size: 2vw+5px;
 }
 
 #menuc a:hover {
@@ -84,18 +86,14 @@ hr {
 
 h4 {
   text-align: center;
-  font-size: 90%;
+  font-size: 4vw;
   font-weight: bolder;
   color: rgb(1, 192, 192);
   border-color: teal;
   width: 50vw;
-  /* border-left: 6px solid white;
-  border-right: 6px solid white; */
   border-bottom: 3px solid teal;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  /* text-shadow: 1px 1px 1px rgb(61, 61, 61); */
-  /* box-shadow: inset 1px -1px 3px 0 teal; */
 }
 
 mark {
@@ -113,24 +111,16 @@ mark {
 
 #homes,
 #skillss,
+#projs,
 #contacts,
 #abouts {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  /* margin-bottom: 100px; */
-  /* background: radial-gradient(
-    ellipse,
-    rgb(48, 47, 47),
-    rgb(0, 92, 92),
-    rgb(48, 47, 47)
-  ); */
   background-color: transparent;
-
   box-shadow: -3px -1px 8px 0 rgba(0, 0, 0, 0.396),
     3px 1px 8px 0 rgba(0, 0, 0, 0.396);
-  /* margin: 0 19px; */
   padding: 1.5rem;
   width: 65%;
   border-radius: 15px;
@@ -139,6 +129,7 @@ mark {
 #about p {
   padding: 40px;
   text-align: center;
+  color: #ffffffc0;
 }
 
 #contacts {
@@ -160,43 +151,22 @@ img {
   font-family: "Redressed", cursive;
 }
 
-/*  ul li {
-  list-style-type: none;
-  padding: 5px;
-} */
+#homes p {
+  color: #ffffffc0;
+}
 
-/* progress {
-  border-radius: 10px;
-  min-width: 190px;
-  height: 25px;
-  margin: 10px;
-}
-progress::-webkit-progress-bar {
-  background-color: white;
-  border-radius: 7px;
-}
-progress::-webkit-progress-value {
-  background-color: teal;
-  border: 1px solid white;
-  border-radius: 7px;
-} */
 .skills {
-  display: grid;
-  grid-template-columns: repeat(3, 150px);
-  grid-template-rows: repeat(3, 50px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.skills button {
+.skills .fab {
   border: none;
   padding: 5px;
   margin: 5px;
-  color: teal;
-  background-color: white;
+  color: white;
 }
-
-/* #contact { */
-/* display: flex;
-  flex-direction: column; */
-/* } */
 
 input,
 textarea {
@@ -205,18 +175,22 @@ textarea {
   border: none;
   border-radius: 9px;
   width: 50vw;
+  color: #ffffffc0;
 }
 
-button {
+textarea {
+  border: 1px solid white;
+  outline: none;
+  height: 150px;
+}
+
+#contact button {
+  border: none;
   border-radius: 10px;
   font-weight: 600;
   box-shadow: -1px -1px 5px 0 rgba(255, 255, 255, 0.485),
     inset 2px -3px 5px 0 rgba(0, 0, 0, 0.363),
     1px 1px 5px 0 rgba(0, 0, 0, 0.719);
-}
-
-#contact button {
-  border: none;
   padding: 10px;
   margin: 10px;
   background-color: white;
@@ -233,25 +207,27 @@ button {
   padding: 3px;
 }
 
+.foota{
+  padding: 1em;
+}
+
 .foot a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
-  background-color: black;
+  /* font-size: 25px; */
   border: none;
   border-radius: 10px;
   padding: 5px;
   margin: 2px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 452px) {
   nav {
     position: fixed;
     font-weight: bold;
   }
 
   #menu {
-    width: fit-content;
     display: block;
     color: white;
     font-size: 25px;
@@ -262,7 +238,7 @@ button {
     position: absolute;
     background-color: transparent;
     text-align: center;
-    top: 40px;
+    top: 65px;
   }
 
   #menuc a {
@@ -280,12 +256,6 @@ button {
 
   nav:hover #menuc {
     display: inline-block;
-  }
-
-  #menu:hover {
-    background-color: white;
-    color: teal;
-    border-radius: 7px;
   }
 
   #about p {
@@ -313,7 +283,6 @@ button {
 }
 @media (max-width: 320px) {
   h4 {
-    /* margin: 70px; */
     padding: 10px;
     width: fit-content;
   }
