@@ -7,5 +7,5 @@ I am Melody Nsita, an aspiring Full Stack Developer.
 - ⚡ Fun fact: I love coding, music and playing with colors.
 - 📫 How to reach me: [Twitter](https://twitter.com/melonoian)
 
-## [Portfolio](https://melodiean.github.io/Melodiean/index.html)
+## [Portfolio](https://melodiean.github.io/Melodiean/)
 
