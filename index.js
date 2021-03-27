@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
-const sendMail = require('./mail');
+const sendMail = require('./src/mail');
 
 const log = console.log;
 const path = require('path');
-const PORT = 8071;
 
 app.use(express.static('public'))
 app.use(express.static('src'))
@@ -16,9 +15,9 @@ app.use(express.urlencoded({
 
 app.use(express.json());
 
-// app.get('/', function(req, res) {
-//     res.sendFile("index.html")
-// });
+app.get('/', function(req, res) {
+    res.sendFile("index.html")
+});
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'src','mail.html'));
@@ -28,7 +27,6 @@ app.post('/', (req, res) => {
     //TODO
     //send email here
     const { name, email, title, message } = req.body;
-    console.log('User Data: ', req.body);
 
     sendMail(name, email, title, message, function(err, data) {
         if (err) {
@@ -38,5 +36,5 @@ app.post('/', (req, res) => {
         }
     });
 });
-
+const PORT = process.env.PORT;
 app.listen(PORT, () => log('Server is starting on PORT,', PORT));
