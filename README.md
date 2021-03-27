@@ -6,5 +6,5 @@ I am Melody Nsita, an aspiring Full Stack Developer.
 - 🔭 I’m also working on grasping the React Framework.
 - ⚡ Fun fact: I love coding, music and playing with colors.
 
-## [Portfolio](https://melodiean.github.io/Melodiean/)
+## [Portfolio](https://melodiean.herokuapp.com/)
 
