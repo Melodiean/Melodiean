@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Melody Nsita</title>
+    <title>Melody A. Nsita</title>
     <script
-    src="https://kit.fontawesome.com/db6572df72.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/db6572df72.js"
+      crossorigin="anonymous"
     ></script>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+
     <link rel="stylesheet" href="portfolio.css" type="text/css" />
   </head>
   <body>
     <nav>
-      <div id="menu"> 
+      <div id="menu">
         <div>
-          <i class="fas fa-bars"></i> 
-       <span>
-        MENU
-       </span>
+          <i class="fas fa-bars"></i>
+          <span> MENU </span>
         </div>
-        
       </div>
       <div id="menuc">
         <a href="#home">HOME</a>
@@ -34,7 +34,6 @@
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </div>
-    
     </nav>
 
     <div class="con">
@@ -67,61 +66,95 @@
         <h4>SKILLS</h4>
         <div id="skillss">
           <div class="skills">
-              <i class="fab fa-html5 fa-3x"></i>
-              <i class="fab fa-node-js fa-3x"></i>
-              <i class="fab fa-github fa-3x"></i>
-              <i class="fab fa-react fa-3x"></i>
-              <i class="fab fa-css3-alt fa-3x"></i>
+            <i class="fab fa-html5 fa-3x"></i>
+            <i class="fab fa-node-js fa-3x"></i>
+            <i class="fab fa-github fa-3x"></i>
+            <i class="fab fa-react fa-3x"></i>
+            <i class="fab fa-css3-alt fa-3x"></i>
           </div>
         </div>
       </div>
 
       <div class="box" id="projects">
         <h4>PROJECTS</h4>
-        <div id="projs"> 
-        <div class="preloader-wrapper big active">
-          <div class="spinner-layer spinner-white-only">
-            <div class="circle-clipper left">
-              <div class="circle"></div>
-            </div><div class="gap-patch">
-              <div class="circle"></div>
-            </div><div class="circle-clipper right">
-              <div class="circle"></div>
+        <div id="projs">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-white-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
             </div>
           </div>
-        </div>
           <!-- <!-- <div class="proj"></div>
           <div class="proj"></div>
           <div class="proj"></div> -->
-        </div> 
+        </div>
       </div>
 
       <div class="box" id="contact">
         <h4>CONTACT ME</h4>
-        <form action="contact.php" method="post" id="contacts">
-          <input type="text" id="name" name="guest_name" placeholder="Name" />
-          <input type="email" id="email" name="guest_email" placeholder="Email" required/>
-          <input type="text" id="title" name="mail_title" placeholder="Subject" />
-          <textarea id="message" name="guest_message" maxlength="100" placeholder="Enter Message"></textarea>
+        <form action="/" method="post" id="contacts">
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input type="text" id="title" name="title" placeholder="Subject" />
+          <textarea
+            id="message"
+            name="message"
+            maxlength="100"
+            placeholder="Enter Message"
+          ></textarea>
 
           <button type="submit" name="send">SEND</button>
         </form>
       </div>
     </div>
-    
+
     <div class="foot">
       <p>Find Me On:</p>
       <div class="foota">
-
-        <a href="https://github.com/Melodiean" target="_blank"> <i class="fab fa-github-square fa-2x"></i></a>
+        <a href="https://github.com/Melodiean" target="_blank">
+          <i class="fab fa-github-square fa-2x"></i
+        ></a>
         <a href="https://mobile.twitter.com/melonoian" target="_blank">
           <i class="fab fa-twitter-square fa-2x"></i>
         </a>
-        <a href="https://www.linkedIn.com/in/melodiean" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        
+        <a href="https://www.linkedIn.com/in/melodiean" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
       </div>
       <p id="ft"></p>
     </div>
+    <script>
+      let form = document.querySelector("form");
+
+      form.addEventListener("submit", guest);
+
+      function guest() {
+        const name = document.querySelector("#name");
+        const email = document.querySelector("#email");
+        const title = document.querySelector("title");
+        const message = document.querySelector("#message");
+
+        const data = {
+          name,
+          email,
+          title,
+          message,
+        };
+      }
+    </script>
     <script>
       let ft = document.querySelector("#ft");
       ft.style.color = "silver";
