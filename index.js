@@ -36,7 +36,7 @@ app.post("/", (req, res) => {
 
   const auth = {
     auth: {
-      api_key: process.env.API_KEY,
+      api_key: process.env.APIKEY,
       domain: process.env.DOMAIN,
     },
   };
