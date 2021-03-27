@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const sendMail = require('./src/mail.js');
+const sendMail = require('./src/email');
 
-const log = console.log;
 const path = require('path');
 
 app.use(express.static('public'))
