@@ -70,4 +70,4 @@ app.post("/", (req, res) => {
   });
 });
 const PORT = process.env.PORT;
-app.listen(PORT, () => log("Server is starting on PORT,", PORT));
+app.listen(PORT, () => console.log("Server is starting on PORT,", PORT));
