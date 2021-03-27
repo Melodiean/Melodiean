@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const sendMail = require('./src/mail');
+const sendMail = require('./src/mail.js');
 
 const log = console.log;
 const path = require('path');
